@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "material-symbols";
+
+@theme inline {
+  /* --color-primary: #f39200; */
+  --color-primary: #7c3aed;
+  --color-neon: #00f2ff;
+  --color-deep: #000000;
+  --color-surface: #0a0a0a;
+}
+
+body {
+  font-family: var(--font-display);
+}
+
+.sharp-border {
+  border-width: 2px;
+  border-style: solid;
+}
+.grid-pattern {
+  background-image:
+    linear-gradient(to right, #1a1a1a 1px, transparent 1px),
+    linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+  background-size: 40px 40px;
+}

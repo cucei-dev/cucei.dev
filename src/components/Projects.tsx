@@ -27,7 +27,7 @@ export default function Projects() {
             iconBorderClass="border-primary"
             iconTextClass="text-primary"
             iconHoverBgClass="group-hover:bg-primary"
-            iconHoverTextClass="group-hover:text-black"
+            iconHoverTextClass="group-hover:text-white"
           />
           <ProjectItem
             id="profesores"

@@ -50,10 +50,10 @@ export default function ProjectItem({
         >
           <span className="material-symbols-outlined text-4xl">{icon}</span>
         </div>
-        <h3 className="text-4xl font-black mb-6 uppercase tracking-tighter">
+        <h3 className="text-2xl md:text-3xl lg:text-4xl font-black mb-6 uppercase tracking-tighter">
           {name}
         </h3>
-        <p className="text-lg leading-relaxed mb-8 opacity-80 group-hover:opacity-100">
+        <p className="md:text-lg leading-relaxed mb-8 opacity-80 group-hover:opacity-100">
           {description}
         </p>
       </div>

@@ -2,7 +2,7 @@ import AboutItem from "./about/Item";
 
 export default function About() {
   return (
-    <section className="py-32 bg-black" id="projects">
+    <section className="py-32 bg-black" id="about">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-3 gap-0 border-2 border-white">
           <AboutItem
@@ -15,7 +15,7 @@ export default function About() {
             iconBorderClass="border-primary"
             iconTextClass="text-primary"
             iconHoverBgClass="group-hover:bg-primary"
-            iconHoverTextClass="group-hover:text-black"
+            iconHoverTextClass="group-hover:text-white"
           />
           <AboutItem
             icon="groups"

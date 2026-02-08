@@ -2,7 +2,7 @@ export default function Stats() {
   return (
     <section className="py-24 bg-black border-y-2 border-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="border-l-4 border-primary pl-6">
             <div className="text-6xl font-black mb-2 tracking-tighter">?</div>
             <div className="font-mono text-sm uppercase tracking-widest text-primary">

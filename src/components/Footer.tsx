@@ -34,7 +34,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
+                <a className="hover:text-primary transition-colors" href="https://api.cucei.dev/redoc">
                   Documentación
                 </a>
               </li>
@@ -46,7 +46,7 @@ export default function Footer() {
             </h5>
             <ul className="space-y-4 font-mono text-sm uppercase">
               <li>
-                <a className="hover:text-neon transition-colors" href="#">
+                <a className="hover:text-neon transition-colors" href="https://github.com/cucei-dev">
                   GitHub
                 </a>
               </li>

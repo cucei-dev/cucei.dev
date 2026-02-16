@@ -10,12 +10,12 @@ export default function Join() {
           miles de alumnos, este es tu lugar.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <button className="bg-black text-white px-6 py-4 md:px-12 md:py-6 font-black md:text-xl uppercase tracking-widest hover:bg-primary transition-colors">
+          <a href="#" className="bg-black text-white px-6 py-4 md:px-12 md:py-6 font-black md:text-xl uppercase tracking-widest hover:bg-primary transition-colors">
             Registrarme
-          </button>
-          <button className="border-4 border-black text-black px-6 py-4 md:px-12 md:py-6 font-black md:text-xl uppercase tracking-widest hover:bg-black hover:text-white transition-all">
+          </a>
+          <a href="https://api.cucei.dev/redoc" className="border-4 border-black text-black px-6 py-4 md:px-12 md:py-6 font-black md:text-xl uppercase tracking-widest hover:bg-black hover:text-white transition-all">
             Ver Documentación
-          </button>
+          </a>
         </div>
       </div>
     </section>

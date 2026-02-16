@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
         <div className="max-w-4xl">
           <div className="inline-block px-4 py-1 border-2 border-neon text-neon font-mono text-xs mb-8 uppercase tracking-[0.2em] font-bold mt-3">
-            ESTADO: EN DESARROLLO // BUILD 0.1.0
+            ESTADO: ACTIVO // BUILD 1.0.0
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-[0.9] tracking-tighter uppercase">
             Impulsando el <br />

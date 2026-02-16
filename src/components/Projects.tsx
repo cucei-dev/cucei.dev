@@ -2,7 +2,7 @@ import ProjectItem from "./projects/Item";
 
 export default function Projects() {
   return (
-    <section className="py-32 bg-black" id="projects">
+    <section className="py-32 bg-black scroll-mt-20" id="projects">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col mb-20 border-l-8 border-neon pl-8">
           <h2 className="text-5xl font-black uppercase tracking-tighter mb-4">

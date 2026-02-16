@@ -2,7 +2,7 @@ import AboutItem from "./about/Item";
 
 export default function About() {
   return (
-    <section className="py-32 bg-black" id="about">
+    <section className="py-32 bg-black scroll-mt-20" id="about">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-3 gap-0 border-2 border-white">
           <AboutItem

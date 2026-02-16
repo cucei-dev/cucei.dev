@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-black py-20 border-t-2 border-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-16 mb-20">
           <div className="lg:col-span-2">
-            <div className="font-mono text-3xl font-black text-white mb-8 tracking-tighter uppercase">
+            <Link href="/" className="font-mono text-3xl font-black text-white mb-8 tracking-tighter uppercase">
               CUCEI<span className="text-primary">.</span>DEV
-            </div>
+            </Link>
             <p className="text-white/60 text-lg leading-relaxed max-w-md">
               Comunidad autónoma de desarrollo tecnológico. Impulsando la
               cultura hacker y el código abierto dentro de la Universidad de
@@ -19,19 +21,19 @@ export default function Footer() {
             </h5>
             <ul className="space-y-4 font-mono text-sm uppercase">
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
+                <Link className="hover:text-primary transition-colors" href="/#horarios">
                   Horarios
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
+                <Link className="hover:text-primary transition-colors" href="/#profesores">
                   Profesores
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
+                <Link className="hover:text-primary transition-colors" href="/#planificador">
                   Planificador
-                </a>
+                </Link>
               </li>
               <li>
                 <a className="hover:text-primary transition-colors" href="https://api.cucei.dev/redoc">
@@ -46,6 +48,11 @@ export default function Footer() {
             </h5>
             <ul className="space-y-4 font-mono text-sm uppercase">
               <li>
+                <Link className="hover:text-neon transition-colors" href="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <a className="hover:text-neon transition-colors" href="https://github.com/cucei-dev">
                   GitHub
                 </a>
@@ -56,14 +63,14 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a className="hover:text-neon transition-colors" href="#">
+                <Link className="hover:text-neon transition-colors" href="/team">
                   Contribuidores
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-neon transition-colors" href="#">
+                <Link className="hover:text-neon transition-colors" href="/hack">
                   Hackathons
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -73,28 +80,28 @@ export default function Footer() {
             </h5>
             <ul className="space-y-4 font-mono text-sm uppercase">
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
+                <Link className="hover:text-primary transition-colors" href="/conducta">
                   Código de Conducta
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
+                <Link className="hover:text-primary transition-colors" href="/privacidad">
                   Privacidad
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-primary transition-colors" href="#">
+                <Link className="hover:text-primary transition-colors" href="/condiciones">
                   Términos y Condiciones
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex items-center gap-8 grayscale brightness-200 opacity-50">
-            <div className="font-mono text-3xl font-black text-white mb-8 tracking-tighter uppercase">
+            <Link href="/" className="font-mono text-3xl font-black text-white mb-8 tracking-tighter uppercase">
               CUCEI<span className="text-primary">.</span>DEV
-            </div>
+            </Link>
           </div>
           <p className="text-xs font-mono text-white/40 uppercase tracking-widest">
             © {new Date().getFullYear()} cucei.dev // Built with precision &amp; caffeine.

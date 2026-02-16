@@ -34,7 +34,7 @@ export default function ProjectItem({
   return (
     <div
       id={id}
-      className={`p-12 flex flex-col justify-between group transition-colors
+      className={`p-12 flex flex-col justify-between group transition-colors scroll-mt-20
         ${hoverBgClass} ${hoverTextClass}
         ${border ? "border-b-2 lg:border-b-0 lg:border-r-2 border-white" : ""}
       `}

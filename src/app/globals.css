@@ -2,11 +2,14 @@
 @import "material-symbols";
 
 @theme inline {
-  /* --color-primary: #f39200; */
   --color-primary: #7c3aed;
   --color-neon: #00f2ff;
   --color-deep: #000000;
   --color-surface: #0a0a0a;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,4 +25,25 @@ body {
     linear-gradient(to right, #1a1a1a 1px, transparent 1px),
     linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
   background-size: 40px 40px;
+}
+
+.sidebar-link.active {
+  @apply border-primary text-primary font-bold;
+}
+.legal-content h2 {
+  @apply text-xl md:text-2xl font-black uppercase tracking-tight mb-6 mt-12 text-white border-l-4 border-primary pl-4;
+}
+.legal-content p {
+  @apply md:text-lg leading-relaxed mb-6 text-white;
+}
+.legal-content ol {
+  @apply list-decimal list-outside ml-6 space-y-6 md:text-lg;
+}
+.legal-content li {
+  @apply pl-4 text-white;
+}
+
+.sharp-card {
+  border: 2px solid white;
+  box-shadow: 10px 10px 0px 0px #ffffff;
 }

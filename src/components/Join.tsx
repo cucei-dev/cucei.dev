@@ -13,7 +13,7 @@ export default function Join() {
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Link href="/dev" className="bg-black text-white px-6 py-4 md:px-12 md:py-6 font-black md:text-xl uppercase tracking-widest hover:bg-primary transition-colors">
-            Registrarme
+            Crear Proyecto
           </Link>
           <a href="https://api.cucei.dev/redoc" className="border-4 border-black text-black px-6 py-4 md:px-12 md:py-6 font-black md:text-xl uppercase tracking-widest hover:bg-black hover:text-white transition-all">
             Ver Documentación

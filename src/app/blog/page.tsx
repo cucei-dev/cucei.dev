@@ -1,3 +1,5 @@
+"use client";
+
 import BlogItem from "@/components/blog/Item";
 
 export default function Blog() {
@@ -30,10 +32,86 @@ export default function Blog() {
               href="cucei-dev"
             />
           </div>
-          <div className="mt-20 flex justify-center">
-            <button className="border-2 border-white text-white px-12 py-5 font-black text-lg uppercase tracking-widest hover:bg-white hover:text-black transition-all">
-              Cargar más artículos
-            </button>
+          <div className="mt-20 border-2 border-white p-8 md:p-12">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
+                ¿Quieres publicar un artículo con nosotros?
+              </h2>
+              <p className="text-white/70 md:text-lg max-w-2xl mx-auto">
+                Comparte tus conocimientos con la comunidad de desarrolladores de CUCEI.
+                Envíanos tu artículo y lo publicaremos en nuestro blog.
+              </p>
+            </div>
+            <form
+              className="max-w-2xl mx-auto space-y-6"
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.currentTarget;
+                const title = (form.elements.namedItem("title") as HTMLInputElement).value;
+                const author = (form.elements.namedItem("author") as HTMLInputElement).value;
+                const content = (form.elements.namedItem("content") as HTMLTextAreaElement).value;
+                const subject = encodeURIComponent(`Nuevo artículo: ${title}`);
+                const body = encodeURIComponent(
+                  `Título: ${title}\n\nAutor: ${author}\n\nContenido:\n${content}`,
+                );
+                globalThis.location.href = `mailto:redaccion@cucei.dev?subject=${subject}&body=${body}`;
+              }}
+            >
+              <div>
+                <label
+                  htmlFor="title"
+                  className="block font-mono text-xs uppercase tracking-widest mb-2 text-neon"
+                >
+                  Título
+                </label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  required
+                  className="w-full bg-white/5 border-2 border-white/30 px-4 py-3 text-white placeholder-white/40 focus:border-neon focus:outline-none transition-colors"
+                  placeholder="Título de tu artículo"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="author"
+                  className="block font-mono text-xs uppercase tracking-widest mb-2 text-neon"
+                >
+                  Autor
+                </label>
+                <input
+                  type="text"
+                  id="author"
+                  name="author"
+                  required
+                  className="w-full bg-white/5 border-2 border-white/30 px-4 py-3 text-white placeholder-white/40 focus:border-neon focus:outline-none transition-colors"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="content"
+                  className="block font-mono text-xs uppercase tracking-widest mb-2 text-neon"
+                >
+                  Contenido
+                </label>
+                <textarea
+                  id="content"
+                  name="content"
+                  required
+                  rows={6}
+                  className="w-full bg-white/5 border-2 border-white/30 px-4 py-3 text-white placeholder-white/40 focus:border-neon focus:outline-none transition-colors resize-none"
+                  placeholder="Escribe el contenido de tu artículo...  # Puedes usar Markdown para formato!"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full border-2 border-white text-white px-12 py-4 font-black text-lg uppercase tracking-widest hover:bg-white hover:text-black transition-all"
+              >
+                Enviar
+              </button>
+            </form>
           </div>
         </div>
       </main>

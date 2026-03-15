@@ -27,7 +27,10 @@ export default function BlogItem({
   href,
 }: Readonly<BlogItemProps>) {
   return (
-    <article className="border-2 border-white group flex flex-col h-full hover:border-neon transition-colors" onClick={() => window.location.href = `/blog/${href}`}>
+    <article
+      className="border-2 border-white group flex flex-col h-full hover:border-neon transition-colors"
+      onClick={() => (window.location.href = `/blog/${href}`)}
+    >
       <div className="aspect-video relative overflow-hidden bg-white/5">
         <Image
           alt={imageAlt}

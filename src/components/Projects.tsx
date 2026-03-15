@@ -20,7 +20,7 @@ export default function Projects() {
             description="Consulta rápida y eficiente de la oferta académica. Revisa horarios de aulas y disponibilidad de materias en tiempo real."
             stack={["Public", "Astro", "React"]}
             linkText="Acceder App"
-            link="#"
+            link="https://horarios.cucei.dev"
             border
             hoverBgClass="hover:bg-white"
             hoverTextClass="hover:text-black"

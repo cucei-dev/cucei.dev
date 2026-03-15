@@ -21,7 +21,7 @@ export default function Footer() {
             </h5>
             <ul className="space-y-4 font-mono text-sm uppercase">
               <li>
-                <Link className="hover:text-primary transition-colors" href="/#horarios">
+                <Link className="hover:text-primary transition-colors" href="https://horarios.cucei.dev">
                   Horarios
                 </Link>
               </li>

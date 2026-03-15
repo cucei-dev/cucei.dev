@@ -13,7 +13,7 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-10 font-mono text-sm uppercase tracking-widest">
             <Link
               className="hover:text-primary transition-colors"
-              href="/#horarios"
+              href="https://horarios.cucei.dev"
             >
               Horarios
             </Link>

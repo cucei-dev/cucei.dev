@@ -1,3 +1,5 @@
+"use client";
+
 type ProjectItemProps = {
   id: string;
   icon: string;
@@ -38,6 +40,7 @@ export default function ProjectItem({
         ${hoverBgClass} ${hoverTextClass}
         ${border ? "border-b-2 lg:border-b-0 lg:border-r-2 border-white" : ""}
       `}
+      onClick={() => (window.location.href = link)}
     >
       <div>
         <div

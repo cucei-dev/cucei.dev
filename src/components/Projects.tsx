@@ -18,7 +18,7 @@ export default function Projects() {
             icon="calendar_month"
             name="Horarios"
             description="Consulta rápida y eficiente de la oferta académica. Revisa horarios de aulas y disponibilidad de materias en tiempo real."
-            stack={["Public", "Astro", "React"]}
+            stack={["Public", "Vite", "React"]}
             linkText="Acceder App"
             link="https://horarios.cucei.dev"
             border

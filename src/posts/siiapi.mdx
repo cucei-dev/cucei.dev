@@ -1,0 +1,33 @@
+# ¡Finalmente! una API de SIIAU para los desarrolladores.
+
+**¿Qué es la SIIAPI?**
+
+La API de SIIAU, un proyecto que se ha intentado muchas veces y muy simple de hacer, solamente se necesita de un scrapper de la oferta académica y estructurar los datos. Pero podría haber problemas cuando SIIAU no esté disponible. Con nuestro proyecto evitamos todos esos problemas.
+
+## Otros proyectos
+Este proyecto se basa en el antiguo sistema que estaba en el servidor johnafleming, donde se podían consultar la disponibilidad de todas las aulas del centro universitario, funcionaba gracias a un scrapper de SIIAU. Otros proyectos empezaron a traer los datos de la misma forma, entre ellos el nuevo sistema de horarios.cucei.udg.mx, siiau.dev y planificadorudg.tech. Pero todos estos tienen un problema en común; dependen completamente de SIIAU, si no está disponible, hay mucho tráfico o incluso si el servidor los llegara a bloquear, entonces ya no podrían mostrar la información.
+
+## Solución
+¿Cómo solucionamos eso? guardando los datos scrappeados en una base de datos; así aunque no esté disponible el SIIAU siempre mostraremos la información actualizada (y de paso nos evitamos muchas peticiones innecesarias a los servidores de la universidad).
+
+La API está desarrollada en FastAPI, un framework de python que permite hacer APIs muy rápidas, gracias a ser asíncrono, y seguras, ya que gracias a Pydantic verifica en cada request el esquema de datos que se está enviando y se asegura de que todos los tipos de dato concuerden con lo que espera nuestro sistema.
+
+## Funcionamiento
+Se puede acceder a la documentación de la API desde [ReDoc](https://api.cucei.dev/redoc), todas las peticiones GET son libres (no requiere inicio de sesión ni registro) e ilimitadas (solamente con un pequeño rate limit) para que puedas usar la API en cualquiera de tus proyectos. Nosotros nos encargaremos de mantener actualizada la base de datos, con una actualización por semana para actualizar los cupos y cada inicio de semestre cargaremos el nuevo calendario.
+
+Desde la SIIAPI podrás acceder a los siguientes datos de SIIAU:
+- Calendarios
+- Centros Universitarios
+- Materias
+- Secciones
+- Profesores
+- Clases
+- Edificios
+- Aulas
+
+## Futuro
+Por el momento solamente actualizaremos la información de la forma antes mencionada. Pero si el proyecto y la comunidad crece nos gustaría poder actualizarlo en tiempo real, en especial durante el registro de materias para que todos puedan estar al pendiente de los cupos en las secciones que tienen planeado agendar.
+
+Este proyecto será la base de los demás proyectos principales de CUCEI.DEV, como Horarios (para ver la disponibilidad de las aulas), Evaluador de Profesores y Planificador.
+
+Y quien sabe... tal vez en un futuro incluyamos a otros centros universitarios de la UDG.

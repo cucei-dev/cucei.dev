@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Content from "@/posts/cucei-dev.mdx";
+import Content from "@/posts/siiapi.mdx";
 
 export default function Post() {
   return (
@@ -9,10 +9,10 @@ export default function Post() {
       <article className="max-w-3xl mx-auto px-6">
         <header className="mb-12">
           <div className="inline-block px-3 py-1 border-2 border-neon text-neon font-mono text-xs mb-6 uppercase tracking-widest font-bold">
-            Publicación
+            Explicación
           </div>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-8 leading-[1.1] tracking-tighter uppercase">
-            CUCEI.DEV
+            SIIAPI
           </h1>
           <div className="flex items-center gap-4">
             <Image
@@ -27,7 +27,7 @@ export default function Post() {
                 Redacción CUCEI.DEV
               </div>
               <div className="font-mono text-xs text-white/60 uppercase tracking-widest">
-                Marzo 01, 2026 • 2 min lectura
+                Marzo 18, 2026 • 4 min lectura
               </div>
             </div>
           </div>

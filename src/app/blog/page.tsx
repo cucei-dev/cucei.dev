@@ -23,10 +23,20 @@ export default function Blog() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <BlogItem
+              title="SIIAPI"
+              description="La API de SIIAU, un proyecto que se ha intentado muchas veces y muy simple de hacer, solamente se necesita de un scrapper de la oferta academica y estructurar los datos. Pero podría haber problemas cuando SIIAU no esté disponible. Con nuestro proyecto evitamos todos esos problemas."
+              date="18 MAR 2026"
+              readTime="4 MIN READ"
+              imageSrc="/images/siiau.png"
+              category="Explicación"
+              imageAlt="SIIAPI"
+              href="siiapi"
+            />
+            <BlogItem
               title="CUCEI.DEV"
               description="Somos una comunidad de estudiantes apasionados por la tecnología y el desarrollo de software. Nacimos con una idea simple: crear un espacio donde los estudiantes de CUCEI podamos colaborar, aprender y construir herramientas útiles para nuestra comunidad universitaria."
               date="01 MAR 2026"
-              readTime="1 MIN READ"
+              readTime="2 MIN READ"
               category="Publicación"
               imageAlt="CUCEI.DEV"
               href="cucei-dev"

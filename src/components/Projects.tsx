@@ -50,9 +50,9 @@ export default function Projects() {
             icon="dashboard_customize"
             name="Planificador"
             description="Diseña tu semestre ideal. Simula combinaciones de horarios, evita cruces y optimiza tu tiempo de estudio automáticamente."
-            stack={["Coming soon", "NextJS", "FastAPI"]}
+            stack={["Tool", "NextJS", "FastAPI"]}
             linkText="Iniciar Plan"
-            link="#"
+            link="https://agenda.cucei.dev"
             hoverBgClass="hover:bg-primary"
             hoverTextClass="hover:text-white"
             iconBorderClass="border-white"

@@ -1,0 +1,17 @@
+Un sistema de Horarios para monitorear todas las aulas, de todos los módulos, de todos los centros universitarios, de la Universidad de Guadalajara.
+
+La idea original de este proyecto estaba en el servidor johnafleming.cucei.udg.mx. Un sistema que se utilizaba para gestionar la disponibilidad de los laboratorios de los módulos Alfa y Beta; ese sistema dejó de funcionar hace un par de meses y ahora el sistema que usan es horarios.cucei.udg.mx.
+
+## Backend
+
+Para desarrollar este proyecto hicimos otra API. La SIIAPI, a pesar de ser una excelente herramienta para obtener los datos de SIIAU normalizados, es muy poco eficiente a la hora de obtener una gran cantidad de datos (en especial si se van a realizar las peticiones desde el cliente), por eso hicimos api.horarios.cucei.dev; una API que trae todos los datos ordenados listos para ser usados por el Frontend.
+
+La API se desarrolló con Express.js y con una Base de Datos de MongoDB, para manejar cada Clase como un diccionario y poner todos los datos que necesita, como su sección, profesor o centro universitario.
+
+### ¿Esto hace que la Base de Datos sea muy redundante?
+
+**Sí**, y es justo lo que necesitábamos.
+
+## Frontend
+
+Para el Frontend se desarrolló una Single Page Application de React usando Vite. Esto nos permitió manejar las peticiones desde el lado del cliente para que el sitio web fuera más interactivo.

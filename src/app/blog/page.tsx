@@ -23,6 +23,16 @@ export default function Blog() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <BlogItem
+              title="Horarios"
+              description="Un sistema de Horarios para monitorear todas las aulas, de todos los módulos, de todos los centros universitarios, de la Universidad de Guadalajara."
+              date="03 ABR 2026"
+              readTime="2 MIN READ"
+              imageSrc="/images/horarios.png"
+              category="Explicación"
+              imageAlt="Horarios"
+              href="horarios"
+            />
+            <BlogItem
               title="SIIAPI"
               description="La API de SIIAU, un proyecto que se ha intentado muchas veces y muy simple de hacer, solamente se necesita de un scrapper de la oferta academica y estructurar los datos. Pero podría haber problemas cuando SIIAU no esté disponible. Con nuestro proyecto evitamos todos esos problemas."
               date="18 MAR 2026"

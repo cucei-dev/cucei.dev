@@ -25,7 +25,7 @@ export default function Header() {
             </Link>
             <Link
               className="hover:text-primary transition-colors"
-              href="/#planificador"
+              href="https://agenda.cucei.dev"
             >
               Planificador
             </Link>

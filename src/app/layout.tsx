@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const font = Inter({
   variable: "--font-display",
@@ -110,6 +111,11 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Script
+          src={process.env.NEXT_PUBLIC_RYBBIT_HOST}
+          data-site-id={process.env.NEXT_PUBLIC_RYBBIT_SITE_ID}
+          strategy="afterInteractive"
+        ></Script>
       </body>
     </html>
   );

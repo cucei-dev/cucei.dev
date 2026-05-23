@@ -58,8 +58,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a className="hover:text-neon transition-colors" href="#">
-                  Discord
+                <a className="hover:text-neon transition-colors" href="https://matrix.to/#/#cucei.dev:matrix.org">
+                  Matrix
                 </a>
               </li>
               <li>

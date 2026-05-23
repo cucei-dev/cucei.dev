@@ -67,9 +67,9 @@ export default function Hero() {
             </a>
             <a
               className="border-2 border-white text-white px-10 py-5 font-black lg:text-lg uppercase tracking-tight hover:bg-white hover:text-black transition-colors"
-              href="#"
+              href="https://matrix.to/#/#cucei.dev:matrix.org"
             >
-              Discord Community
+              Matrix Space
             </a>
           </div>
         </div>

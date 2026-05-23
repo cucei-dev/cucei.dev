@@ -83,7 +83,7 @@ export default function Privacidad() {
                 </li>
                 <li>
                   Permitir la participación activa en nuestra comunidad de
-                  Discord y GitHub.
+                  Matrix y GitHub.
                 </li>
                 <li>
                   Gestionar el registro de colaboradores en proyectos de código
@@ -105,7 +105,7 @@ export default function Privacidad() {
                 <li>Nombre completo y/o seudónimo de desarrollador.</li>
                 <li>Correo electrónico institucional o personal.</li>
                 <li>
-                  Identificadores de cuentas de terceros (GitHub, Discord)
+                  Identificadores de cuentas de terceros (GitHub, Matrix)
                   vinculados a la plataforma.
                 </li>
               </ol>
@@ -126,7 +126,7 @@ export default function Privacidad() {
               <p>
                 Para el ejercicio de cualquiera de los derechos ARCO, usted
                 deberá presentar la solicitud respectiva a través de nuestro
-                canal oficial de soporte en Discord o mediante correo
+                canal oficial de soporte en Matrix o mediante correo
                 electrónico dirigido a legal@cucei.dev.
               </p>
             </section>

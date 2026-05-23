@@ -100,7 +100,7 @@ export default function Condiciones() {
             <section>
               <h2>4. Reglas de la Comunidad</h2>
               <p>
-                La participación en nuestro Discord o en las secciones de
+                La participación en nuestro Matrix Space o en las secciones de
                 reseñas de profesores debe mantenerse profesional y
                 constructiva.
               </p>
